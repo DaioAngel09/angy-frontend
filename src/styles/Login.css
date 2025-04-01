@@ -1,0 +1,110 @@
+/* 🔹 Background da Página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 🔹 Container do Login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 🔹 Animação de Entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* 🔹 Título do Formulário */
+.login-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Campos de Entrada */
+.login-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Efeito ao Focar */
+.login-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* 🔹 Botão de Login */
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+/* 🔹 Efeito ao Passar o Mouse */
+.login-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Efeito ao Clicar */
+.login-form button:active {
+  transform: scale(0.97);
+}
+
+/* 🔹 Link de Recuperação de Senha */
+.login-container a {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 🔹 Efeito no Link ao Passar o Mouse */
+.login-container a:hover {
+  color: #0056b3;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%;
+  }
+}

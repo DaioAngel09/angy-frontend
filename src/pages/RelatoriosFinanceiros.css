@@ -1,0 +1,50 @@
+.relatorios-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filtros {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .graficos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .grafico-bar,
+  .grafico-pie {
+    flex: 1 1 100%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grafico-bar h2,
+  .grafico-pie h2 {
+    margin-bottom: 10px;
+  }
+  
+  .btn-pdf {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-pdf:hover {
+    background: #0056b3;
+  }
+  

@@ -1,0 +1,130 @@
+/* Estilização geral do corpo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-image: url("../assets/background.jpg"); /* Caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Efeito de escurecimento no fundo */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+  z-index: 1;
+}
+
+/* Container do formulário */
+.cadastro-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Cabeçalho */
+.cadastro-header {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0056b3;
+  text-transform: uppercase;
+}
+
+/* Estilização dos inputs */
+.cadastro-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+.cadastro-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botão de cadastro */
+.cadastro-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.cadastro-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: scale(1.05);
+}
+
+/* Link de login */
+.login-link {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .cadastro-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .cadastro-header {
+    font-size: 22px;
+  }
+
+  .cadastro-form input,
+  .cadastro-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

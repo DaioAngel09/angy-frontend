@@ -1,0 +1,58 @@
+.emitir-fatura-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.add-item-button {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-item-button:hover {
+  background-color: #218838;
+}
+
+.emitir-button {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.emitir-button:hover {
+  background-color: #c82333;
+}

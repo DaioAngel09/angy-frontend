@@ -1,0 +1,45 @@
+/* ✅ Certifique-se de que o Tailwind CSS está instalado e configurado corretamente */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* ✅ Estilização global */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* 🔹 Evita rolagem lateral */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ✅ Configuração da imagem de fundo */
+body {
+    background: url('/assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* 🔹 Adicionando um overlay escuro para melhorar a leitura */
+body::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* 🔹 Efeito de escurecimento */
+    z-index: -1;
+}
+
+/* ✅ Ajustes para telas menores */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}

@@ -1,0 +1,174 @@
+/* 🔹 Estilo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Container Principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: #fff;
+  padding: 30px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🔹 Animação Suave */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* 🔹 Títulos */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 🔹 Destaque no Título */
+h2 span {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* 🔹 Parágrafo */
+p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+/* 🔹 Grupo de Botões */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  max-width: 600px;
+}
+
+/* 🔹 Botões */
+button {
+  padding: 14px 22px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 170px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* 🔹 Efeito de Pressionar */
+button:active {
+  transform: scale(0.98);
+}
+
+/* 🔹 Estilos dos Botões */
+.btn-primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #218838;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: #17a2b8;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #138496;
+  transform: translateY(-3px);
+}
+
+.btn-tertiary {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn-tertiary:hover {
+  background: #e0a800;
+  transform: translateY(-3px);
+}
+
+.btn-quaternary {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-quaternary:hover {
+  background: #c82333;
+  transform: translateY(-3px);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .button-group {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  button {
+      width: 90%;
+      font-size: 1rem;
+  }
+}
+
+/* 🔹 Links */
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #f8f9fa;
+}
+
+/* 🔹 Rodapé */
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  padding: 15px;
+  opacity: 0.8;
+}

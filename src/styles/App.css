@@ -1,0 +1,181 @@
+/* 🔹 Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Estilização do Fundo */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: url("../assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* 🔹 Container Principal */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6); /* 🔹 Sobreposição escura */
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 900px;
+}
+
+/* 🔹 Ajuste para garantir que o fundo cubra a tela inteira */
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔹 Cabeçalho */
+.app-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+/* 🔹 Animação de entrada */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Botões */
+.button-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔹 Botão Primário */
+.btn-primary {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Botão Secundário */
+.btn-secondary {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #138496, #117a8b);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Botão de Perigo */
+.btn-danger {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #c82333, #bd2130);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Estilização do Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 🔹 Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  .app-header {
+    font-size: 2.2rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+/* 🔹 Rodapé */
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  padding: 15px;
+}

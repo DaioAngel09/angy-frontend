@@ -1,0 +1,60 @@
+.lista-faturas-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lista-faturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .fatura-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+  }
+  
+  .fatura-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .detalhes-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .detalhes-modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .detalhes-modal button {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "angy-stock",
+    "firebase use": "angy-stock"
+  },
+  "targets": {},
+  "etags": {}
+}
